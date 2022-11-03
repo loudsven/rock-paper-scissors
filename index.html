@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="game-header.css">
+    <link rel="stylesheet" href="playground.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+    <header class="game-header">
+        <h1 class="game-title">Rock <br> Paper <br> Scissors</h1>
+        <span class="game-score">
+            <h2 class="game-score-title">Score</h2>
+            <span class="game-score-value">12</span>
+        </span>
+    </header>
+    <main class="playground playground-init">
+        <span class="game-sign game-sign--paper"></span>
+        <span class="game-sign game-sign--rock"></span>
+        <span class="game-sign game-sign--scissors"></span>
+    </main>
+    <main class="playground playground-battle">
+        <div class="player player1">
+            <h3 class="player-title">
+                You picked
+            </h3>
+            <span class="game-sign game-sign--won"></span>
+        </div>
+        <div class="battle-result">
+            <h2 class="battle-result-title"></h2>
+            <button class="battle-result-again">Play again</button>
+        </div>
+        <div class="player player2">
+            <h3 class="player-title">
+                The house picked
+            </h3>
+            <span class="game-sign"></span>
+        </div>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>

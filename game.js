@@ -10,15 +10,12 @@ let rockElem = document.querySelector('.game-sign--' + SIGNS.ROCK);
 let scissorsElem = document.querySelector('.game-sign--' + SIGNS.SCISSORS);
 let paperElem = document.querySelector('.game-sign--' + SIGNS.PAPER);
 
-
-let p1 = getRandomSign();
-let p2 = getRandomSign();
 let state = {
-    p1,
-    p2,
+    p1: null,
+    p2: null,
     score: 0,
-    isInit: false,
-    lastBattle: whoWon(p1, p2)
+    isInit: true,
+    lastBattle: null,
 };
 
 function getRandomSign() {
